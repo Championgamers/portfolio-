@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arpit's Portfolio</title>
+  <meta name="description" content="Arpit Ganeshaanand: projects, skills, journey and an AI chatbot.">
+  <meta name="theme-color" content="#fbf8f1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=JetBrains+Mono:wght@500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chatbot.css">
+  <noscript><style>body.locked{overflow:auto}#intro{display:none}.rise,.reveal{opacity:1!important}</style></noscript>
+</head>
+<body class="locked">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="cursorRing" class="cursor-ring" aria-hidden="true"><div class="ring-in"><span id="cursorPct"></span></div></div>
+  <div id="cursorDot" class="cursor-dot" aria-hidden="true"></div>
+  <div id="scrollBar" class="scroll-progress" aria-hidden="true"></div>
+
+  <div id="intro" class="intro" role="dialog" aria-label="Welcome">
+    <button id="introSkip" class="intro-skip" type="button">Skip</button>
+    <div class="intro-stage">
+      <span class="intro-line" aria-hidden="true"></span>
+      <p class="intro-kicker">Arpit's Portfolio</p>
+      <blockquote class="intro-quote"><p id="introQuote"></p><footer id="introAuthor"></footer></blockquote>
+      <button id="introGo" class="go-btn" type="button"><span id="introGoText">Are we ready to rock??</span><i aria-hidden="true">&rarr;</i></button>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#home"><img id="brandPhoto" class="brand-photo" alt="" width="34" height="34"><span id="brandName">Arpit&rsquo;s Portfolio</span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#home">Home</a><a href="#about">About Me</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#journey">Journey</a><a href="#contact">Contact</a><a href="#portfolio-chatbot" id="navChat">AI Chatbot</a>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="true">
+        <svg class="i-sun" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="hero-side" aria-hidden="true" id="heroYear">Portfolio</div>
+      <div class="hero-giant" aria-hidden="true"><span id="giantText">ARPIT</span></div>
+      <div class="hero-photo rise" style="--d:.2s"><img id="heroCutout" alt="" width="760" height="718"></div>
+      <div class="hero-copy">
+        <p class="eyebrow rise" style="--d:.3s" id="heroRole"></p>
+        <h1 id="heroName" class="hero-name">Your Name</h1>
+        <p class="hero-rotator rise" style="--d:.7s" id="heroRotator" aria-live="polite"></p>
+        <div class="hero-actions rise" style="--d:.85s">
+          <a id="heroGithub" class="btn btn-solid" href="#contact" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.76 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.42-2.7 5.4-5.27 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>GitHub</a>
+          <a id="heroLinkedin" class="btn" href="#contact" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>LinkedIn</a>
+        </div>
+      </div>
+      <div class="badge rise" style="--d:1s" aria-hidden="true">
+        <svg viewBox="0 0 120 120" class="badge-ring"><defs><path id="ringPath" d="M60 60 m-48 0 a48 48 0 1 1 96 0 a48 48 0 1 1 -96 0"/></defs><text><textPath href="#ringPath" id="ringText"></textPath></text></svg>
+        <img id="badgePhoto" alt="" width="64" height="64">
+      </div>
+      <a class="scroll-cue rise" style="--d:1.2s" href="#about" aria-label="Scroll to About Me"><span></span></a>
+    </section>
+
+    <div class="marquee" aria-hidden="true"><div id="marqueeTrack" class="marquee-track"></div></div>
+
+    <section id="about" class="section">
+      <p class="eyebrow reveal">01 &mdash; About Me</p>
+      <h2 class="reveal">Hello, I'm <em id="aboutName">me</em></h2>
+      <div id="aboutText" class="about-text"></div>
+      <h3 class="sub reveal">Education</h3>
+      <ul id="educationList" class="education-list"></ul>
+    </section>
+
+    <section id="skills" class="section">
+      <p class="eyebrow reveal">02 &mdash; Skills</p>
+      <h2 class="reveal">What I <em>work with</em></h2>
+      <div id="skillsGrid" class="skills-grid"></div>
+    </section>
+
+    <section id="projects" class="section">
+      <p class="eyebrow reveal">03 &mdash; Projects</p>
+      <h2 class="reveal">Selected <em>work</em></h2>
+      <p class="lead reveal">Search by project name or technology, for example "Python", "Quiz" or "Book".</p>
+      <div class="project-buttons reveal">
+        <a id="quizBtn" class="btn btn-solid quiz-btn" href="projects/interactive-quiz/index.html" target="_blank" rel="noopener">Play the Interactive Quiz &rarr;</a>
+        <a id="readingBtn" class="btn" href="https://reading-list-app-livid.vercel.app/" target="_blank" rel="noopener">Open the Reading List App &rarr;</a>
+      </div>
+      <div class="project-tools reveal">
+        <label class="visually-hidden" for="projectSearch">Search projects</label>
+        <input id="projectSearch" type="search" placeholder="Search projects or technologies" autocomplete="off">
+        <div id="techFilters" class="chips" role="group" aria-label="Filter by technology"></div>
+      </div>
+      <p id="projectCount" class="project-count" aria-live="polite"></p>
+      <div id="projectGrid" class="project-grid"></div>
+      <p id="noResults" class="no-results" hidden>No projects match your search. Try "Python", "Quiz" or "Book".</p>
+    </section>
+
+    <section id="journey" class="section">
+      <p class="eyebrow reveal">04 &mdash; Journey</p>
+      <h2 class="reveal">My <em>Journey</em></h2>
+      <div id="journeyList" class="journey"><div id="railFill" class="rail-fill"></div></div>
+    </section>
+
+    <section id="contact" class="section">
+      <p class="eyebrow reveal">05 &mdash; Contact Information</p>
+      <h2 class="reveal">Let's <em>talk</em></h2>
+      <a id="contactBig" class="contact-big reveal" href="#contact" hidden></a>
+      <ul id="contactList" class="contact-list"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p id="footerText"></p></footer>
+
+  <!-- AI chatbot: a floating helper that calls out to visitors; the panel holds the chat -->
+  <button id="botLauncher" class="bot-launcher" type="button" aria-label="Open the AI chatbot" aria-expanded="false" aria-controls="portfolio-chatbot">
+    <span class="bot-bubble" id="botBubble" aria-live="polite"></span>
+    <span class="bot-body">
+      <svg viewBox="0 0 64 64" width="38" height="38" aria-hidden="true">
+        <line x1="32" y1="6" x2="32" y2="14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle class="bot-antenna" cx="32" cy="5" r="3.2" fill="currentColor"/>
+        <rect x="9" y="14" width="46" height="36" rx="15" fill="none" stroke="currentColor" stroke-width="2.5"/>
+        <g class="bot-eyes"><ellipse cx="24" cy="31" rx="3.6" ry="4.6" fill="currentColor"/><ellipse cx="40" cy="31" rx="3.6" ry="4.6" fill="currentColor"/></g>
+        <path d="M26 41c3.5 3.5 8.5 3.5 12 0" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+        <circle cx="16" cy="38" r="2.6" fill="currentColor" opacity=".35"/><circle cx="48" cy="38" r="2.6" fill="currentColor" opacity=".35"/>
+      </svg>
+    </span>
+  </button>
+
+  <section id="portfolio-chatbot" class="chatbot-section" aria-label="AI chatbot" hidden>
+    <div class="chat-head">
+      <div><h2>Ask my portfolio chatbot</h2><p id="chatSub">Short answers about Arpit's skills, projects and GitHub.</p></div>
+      <button id="chatClose" class="chat-close" type="button" aria-label="Close chatbot">&times;</button>
+    </div>
+    <div id="chatMessages" class="chat-messages" aria-live="polite">
+      <p class="bot-message" id="chatGreeting">Hello! Ask me something about this portfolio.</p>
+    </div>
+    <div id="chatSuggest" class="chat-suggest"></div>
+    <form id="chatForm" class="chat-form">
+      <label class="visually-hidden" for="chatInput">Your question</label>
+      <input id="chatInput" type="text" placeholder="Type your question" maxlength="300" required>
+      <button id="chatSend" type="submit">Send</button>
+    </form>
+    <p id="chatStatus" aria-live="polite"></p>
+  </section>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+  <script src="config.js"></script>
+  <script src="chatbot.js"></script>
+</body>
+</html>
